@@ -12,7 +12,7 @@
 
     {
       "key": "youtrack-project-flag",
-      "name": "youtrack-project-flag",
+      "name": "YouTrack project flag",
       "indexPath": "project_flag/index.html",
       "extensionPoint": "MAIN_MENU_ITEM",
       "iconPath": "project_flag/widget-icon.svg",
