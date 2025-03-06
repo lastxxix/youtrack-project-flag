@@ -1,0 +1,1 @@
+Simple YouTrack app that lists available projects and provides a toggle to enable or disable a boolean flag, mimicking an admin panel for a test management system. The flag is persisted on the YouTrack Server backend.
