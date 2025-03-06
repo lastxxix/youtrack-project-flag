@@ -1,6 +1,6 @@
 {
   "name": "intern-project-jetbrains",
-  "title": "Davide YouTrack",
+  "title": "YouTrack project flag",
   "description": "Simple YouTrack app that lists available projects and provides a toggle to enable or disable a boolean flag, mimicking an admin panel for a test management system. The flag is persisted on the YouTrack Server backend.",
   "$schema": "https://json.schemastore.org/youtrack-app.json",
   "vendor": {
@@ -12,7 +12,7 @@
 
     {
       "key": "youtrack-project-flag",
-      "name": "1youtrack-project-flag",
+      "name": "youtrack-project-flag",
       "indexPath": "project_flag/index.html",
       "extensionPoint": "MAIN_MENU_ITEM",
       "iconPath": "project_flag/widget-icon.svg",
