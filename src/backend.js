@@ -15,20 +15,6 @@ exports.httpHandler = {
       }
     },
     {
-      method: 'GET',
-      path: 'projects/:id',
-      handle: function handle(ctx) {
-        const id = ctx.request.getParameter('id');
-        const project = projectCache.get(id);
-        
-        if (project) {
-          ctx.response.json(project);
-        } else {
-          ctx.response.json({error: 'Project not found'});
-        }
-      }
-    },
-    {
       method: 'POST',
       path: 'projects',
       handle: function handle(ctx) {
