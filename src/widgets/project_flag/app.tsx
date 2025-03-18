@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import { Project } from './interfaces/project';
-import '@jetbrains/ring-ui/components/loader/loader.css';
 import './app.css';
-import ProjectsTable from './components/ProjectTable';
-
+import ProjectList from './components/ProjectList';
+import ProjectHeader from './components/ProjectHeader';
+import Loader from '@jetbrains/ring-ui-built/components/loader/loader';
+import ErrorMessage from '@jetbrains/ring-ui-built/components/error-message/error-message';
 // Debug utility to avoid direct console usage
 /*
 const debug = {
@@ -110,17 +111,25 @@ const AppComponent = () => {
     fetchProjects();
   }, []);
 
+  if (loading) {
+    return (
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "100vh", height: "100vh",width: "100%" }}>
+        <Loader style={{fontWeight: "bold"}} message="Loading projects..." />
+      </div>
+    );
+  }
+
+  if (error) {
+    return (<div style={{height: '300px'}}>
+        <ErrorMessage message="Error" description={error} />
+      </div>
+    );
+  }
 
   return (
-    <div className="projects-table">
-      <h2>Available Projects</h2>
-      {loading && <div className="ring-loader">Loading...</div>}
-      {error && <div className="error-message">{error}</div>}
-      <ProjectsTable
-        projects={projects}
-        onToggleFlag={handleToggleFlag}
-        loading={loading}
-      />
+    <div className="projects-table" style={{ padding: "24px", display: "flex", flexDirection: "column", width: "70%", justifyContent: "center", margin: "auto" }}>
+      <ProjectHeader />
+      <ProjectList projects={projects} onToggleFlag={handleToggleFlag} loading={loading} />
     </div>
   );
 };
