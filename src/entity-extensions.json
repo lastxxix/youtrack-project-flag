@@ -1,0 +1,12 @@
+{
+  "entityTypeExtensions": [
+    {
+      "entityType": "Project",
+      "properties": {
+        "flag": {
+          "type": "boolean"
+        }
+      }
+    }
+  ]
+}
