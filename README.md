@@ -42,20 +42,20 @@ You can install the app in YouTrack using one of the two options below:
 1. Clone the repository:
 
     ```bash
-        git clone https://github.com/lastxxix/youtrack-project-flag.git
-        cd youtrack-project-flag
+    git clone https://github.com/lastxxix/youtrack-project-flag.git
+    cd youtrack-project-flag
     ```
 
 2. Install the dependencies:
 
     ```bash
-        npm install
+    npm install
     ```
 
 3. Build and upload the app by running:
 
     ```bash
-        npm run build && npm run upload -- --host <your-youtrack-base-url> --token <your-permanent-token>
+    npm run build && npm run upload -- --host <your-youtrack-base-url> --token <your-permanent-token>
     ```
 
     Replace `<your-youtrack-base-url>` with the base URL of your YouTrack server, and `<your-permanent-token>` with your permanent token. You can create a permanent token from the Account Security page in your profile settings by clicking **Add Credentials**.
