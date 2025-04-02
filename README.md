@@ -3,7 +3,7 @@
 This application was developed as part of the Test Practice Assignment. The app includes a **MAIN_MENU_ITEM** extension point and consists of a single page that displays:
 
 - A list of available projects in YouTrack.
-- A toggle to enable/disable a boolean flag, simulating the administration panel of our future test management system.
+- A toggle to enable/disable a boolean flag, simulating the administration panel of future test management system.
 
 The flag is persisted and managed on the YouTrack Server backend through entity extensions.
 
