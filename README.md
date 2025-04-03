@@ -30,7 +30,7 @@ You can install the app in YouTrack using one of the two options below:
 
 ### 1) Download from the Release Page (Recommended)
 
-1. Go to the [Release](https://github.com/lastxxix/your-repo/youtrack-project-flag) page.
+1. Go to the [Release](https://github.com/lastxxix/youtrack-project-flag) page.
 2. Download the latest release in `.zip` format.
 3. Access your YouTrack instance.
 4. Navigate to **Administration -> Apps**.
